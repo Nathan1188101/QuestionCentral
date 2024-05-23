@@ -25,7 +25,7 @@ function getRandomQuestion() {
 
 	    res.on('end', function () {
 		    const body = Buffer.concat(chunks);
-		    //console.log(body.toString());
+		    console.log(body.toString());
 			resolve(body.toString()) //resolve for the promise success handling 
 	    });
     }); 
