@@ -1,0 +1,32 @@
+body{
+    background-color: #f8f9fa;
+}
+
+/********************/
+/****** Navbar ******/
+/********************/
+
+.navbar-icon{
+    height: auto; 
+    width: 50px;
+}
+
+.navbar-brand{
+    font-family: 'Danfo', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+.navbar{
+    background-color: #673AB7;
+}
+
+/********************/
+/****** WYR Page ****/
+/********************/
+
+.wyr-title{
+    font-family: 'Danfo', sans-serif;
+    
+}
+
