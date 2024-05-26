@@ -22,6 +22,10 @@ router.get('/trivia', (req, res, next) => {
     questionsController.trivia(req, res, next) 
 })
 
+router.get('/couples', (req, res, next) => {    
+    questionsController.couplesQuestion(req, res, next)
+})
+
 module.exports = router; 
 
 

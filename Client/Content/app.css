@@ -27,6 +27,53 @@ body{
 
 .wyr-title{
     font-family: 'Danfo', sans-serif;
-    
+    font-size: 3em; 
 }
 
+/********************/
+/*** Trivia Page ****/
+/********************/
+
+.trivia-title{
+    font-family: 'Jacquard 12', sans-serif;
+    font-size: 3em; 
+}
+
+/********************/
+/****** ToD Page ****/
+/********************/
+
+.tod-title{
+    font-family: 'Jaro', sans-serif;
+    font-size: 3em; 
+}   
+
+/********************/
+/* Categories Page **/
+/********************/
+
+.tod-option{
+    font-family: 'Jaro', sans-serif;
+  
+}   
+
+.trivia-option{
+    font-family: 'Jacquard 12', sans-serif;
+
+}
+
+.wyr-option{
+    font-family: 'Danfo', sans-serif;
+
+}
+
+.categories-container{
+    align-items: center;
+    justify-content: center;
+}
+
+.options{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+     
+}

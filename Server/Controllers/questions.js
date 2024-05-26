@@ -1,5 +1,6 @@
 let wyrCall = require('../../api/wouldYouRather.js') //import the would you rather api call 
 let triviaCall = require('../../api/trivia.js') //import the trivia api call
+let couplesCall = require('../../api/couples_questions.js') //import the couples questions api call
 
 let index = async (req, res, next) => {
 
@@ -48,9 +49,24 @@ let trivia = async (req, res, next) => {
         
 }
 
+let couplesQuestion = async (req, res, next) => {
+    try{
+        let data = await couplesCall() //call the couples questions api
+        let questionReturned = JSON.parse(data) //parse the data returned from the api
+        let question = questionReturned.text //get the question from the data (under text in the response)
+
+        res.render('questions/couples', { title: 'Couples Questions', page: 'couples', question: question }) //render the couples questions page with the question
+    }
+    catch(err){
+        console.log(err)
+        res.status(500).send('An error occurred') //send an error message if an error occurs
+    }
+}
+
 module.exports = {
     index,
     wyr, 
     tod,
-    trivia
+    trivia,
+    couplesQuestion 
 }
