@@ -8,3 +8,39 @@ window.addEventListener('load', () => {
     })
 
 })
+
+// Select the loader
+const loader = document.querySelector('.loader');
+
+// Function to show the loader
+function showLoader() {
+    loader.style.display = 'block';
+}
+
+// Function to hide the loader
+function hideLoader() {
+    loader.style.display = 'none';
+}
+
+// Get the category selected by the user
+// This is just an example, replace it with your actual code to get the category
+const category = document.querySelector('.category-select').value;
+
+// Show the loader when making a request
+showLoader();
+
+// Make the request to the server
+fetch(`/api/couplesQuestion?category=${encodeURIComponent(category)}`)
+    .then(response => response.json())
+    .then(data => {
+        // Use the data here...
+
+        // Hide the loader
+        hideLoader();
+    })
+    .catch(error => {
+        // Handle the error here...
+
+        // Hide the loader
+        hideLoader();
+    });
