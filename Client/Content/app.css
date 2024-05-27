@@ -1,5 +1,47 @@
 body{
     background-color: #f8f9fa;
+    color: black;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.dark-mode{
+    background-color: #343a40;
+    color: #fff;
+}
+
+.darkmode-button{
+    padding: 0.5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.darkmode-button.darkmode{
+    background: #444;
+    color: white;
+}
+
+/********************/
+/****** Scroll ******/
+/********************/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #b0aaaa; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5829a8; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4e229b; 
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #421295; 
 }
 
 /********************/
@@ -54,17 +96,22 @@ body{
 
 .tod-option{
     font-family: 'Jaro', sans-serif;
-  
+    font-size: 2rem;
 }   
 
 .trivia-option{
     font-family: 'Jacquard 12', sans-serif;
+    font-size: 3rem;
 
 }
 
 .wyr-option{
     font-family: 'Danfo', sans-serif;
+    font-size: 2rem;
+}
 
+.couples-option{
+    font-size: 2rem;
 }
 
 .categories-container{
@@ -88,13 +135,18 @@ body{
     height: 400px; 
     border: 1px solid #000; 
     border-radius: 20px; 
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.options div:hover{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 
 .options div a{
     text-decoration: none;
-    font-size: 2rem; 
 
 }
 

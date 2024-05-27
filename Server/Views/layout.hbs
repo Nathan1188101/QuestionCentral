@@ -37,6 +37,9 @@
                         <a class="nav-link" href="/about"><i class="fa-solid fa-circle-info"></i> About</a>
                     </li>
                 </ul>
+                <ul class="navbar-nav ms-auto">
+                      <button class="darkmode-button" id="dark-mode-toggle">Toggle Dark Mode</button>
+                </ul>
             </div>
         </div>
     </nav>
@@ -44,11 +47,21 @@
     <main>
         {{{body}}}
     </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <p>&copy; 2024 Question Central</p>
+                <p>Created by <a href="https://github.com/Nathan1188101?tab=repositories" target="_blank" style="text-decoration: none;"><i class="fa-brands fa-github"></i> Nathan Secord</a></p>
+            </div>
+        </div>
+    </footer>
     
 
     <!-- Script Section -->
     <script src="../jquery/dist/jquery.min.js"></script>
     <script src="../bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../Scripts/app.js"></script>
+    <script src="../Scripts/darkmode.js"></script>
 </body>
 </html>
