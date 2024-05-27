@@ -96,7 +96,7 @@ body.dark-mode{
 
 .tod-option{
     font-family: 'Jaro', sans-serif;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }   
 
 .trivia-option{
@@ -111,7 +111,8 @@ body.dark-mode{
 }
 
 .couples-option{
-    font-size: 2rem;
+    font-family: "Exo 2", sans-serif;
+    font-size: 2.5rem;
 }
 
 .categories-container{
@@ -155,9 +156,40 @@ body.dark-mode{
     animation: up-down 1s infinite ease-in-out alternate;
 }
 
+.options div:first-child{
+    background-color: #f6bf18e3;
+}
+
+.options div:nth-child(2){
+    background-color: #f6183de3;
+}
+
+.options div:nth-child(3){
+    background-color: #41e016e3;
+}
+
+.options div:last-child{
+    background-color: #eb0fb4e3;
+}
+
 .options div a{
     text-decoration: none;
+}
 
+.options div a.tod-option{
+    color: #aa1ab7; 
+}
+
+.options div a.trivia-option{
+    color: #1a9db7; 
+}
+
+.options div a.wyr-option{
+    color: #10cd5f;
+}
+
+.options div a.couples-option{
+    color: #244ee5e3;
 }
 
 .categoryPage-title{
@@ -165,4 +197,33 @@ body.dark-mode{
     margin: 50px;
     font-size: 3rem; 
     margin-bottom: 80px;
+}
+
+.heart{
+    transform: scale(8);
+    transition: color 0.5s ease;
+    color: #a71282e3;
+    margin: 130px;
+}
+
+.heart:hover{
+    color: rgb(255, 255, 255); 
+    animation: beat 0.5s infinite alternate;
+}
+
+@keyframes beat {
+    100% {
+        transform: scale(8.6);
+    }
+    0% {
+        transform: scale(8);
+    }
+}
+
+/********************/
+/**** Footer Page ***/
+/********************/
+
+.footer{
+    margin-top: 30px; 
 }
