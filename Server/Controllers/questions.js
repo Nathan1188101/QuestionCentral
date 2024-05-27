@@ -50,8 +50,10 @@ let trivia = async (req, res, next) => {
 }
 
 let couplesQuestion = async (req, res, next) => {
+                        //.query is used to get the query string from the url (VERY IMPORTANT IN THIS CONTEXT)
+    const category = req.query.category //get the category from the form
     try{
-        let data = await couplesCall() //call the couples questions api
+        let data = await couplesCall(category) //call the couples questions api
         let questionReturned = JSON.parse(data) //parse the data returned from the api
         let question = questionReturned.text //get the question from the data (under text in the response)
 
@@ -69,4 +71,4 @@ module.exports = {
     tod,
     trivia,
     couplesQuestion 
-}
+}   

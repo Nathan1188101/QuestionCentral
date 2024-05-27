@@ -1,17 +1,15 @@
 const http = require('https') //importing the http module
 
-function getRandomCouplesQuestion(){
+function getRandomCouplesQuestion(category){
 
     return new Promise((resolve, reject) => {
-
-        //put something here for category select? I think we probably start here with variables 
 
         //options for the request 
         const options = {
             method: 'GET',
             hostname: 'questionsapi-24op.onrender.com',
             port: null,
-            path: '/questions/random?category=spicy',
+            path: `/questions/random?category=${category}`,
 
         }
 
