@@ -4,6 +4,8 @@ function getRandomCouplesQuestion(){
 
     return new Promise((resolve, reject) => {
 
+        //put something here for category select? I think we probably start here with variables 
+
         //options for the request 
         const options = {
             method: 'GET',
