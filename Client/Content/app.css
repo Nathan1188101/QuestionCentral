@@ -141,8 +141,18 @@ body.dark-mode{
     transition: box-shadow 0.3s ease;
 }
 
+@keyframes up-down {
+    100% {
+        transform: translateY(10px);
+    }
+    0% {
+        transform: translateY(0px);
+    }
+}
+
 .options div:hover{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    animation: up-down 1s infinite ease-in-out alternate;
 }
 
 .options div a{
