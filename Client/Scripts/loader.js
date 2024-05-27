@@ -1,3 +1,10 @@
+//if the current page is the couples page, then never show the loader
+//do we want to keep this, not sure if I want the spinner evertime choosing new question
+if (window .location.pathname === '/questions/couples'){
+    const loader = document.querySelector('.loader')
+    loader.style.display = 'none'
+}
+//keep this though
 window.addEventListener('load', () => {
     const loader = document.querySelector('.loader')
 
@@ -9,6 +16,7 @@ window.addEventListener('load', () => {
 
 })
 
+/*
 // Select the loader
 const loader = document.querySelector('.loader');
 
@@ -44,3 +52,4 @@ fetch(`/api/couplesQuestion?category=${encodeURIComponent(category)}`)
         // Hide the loader
         hideLoader();
     });
+    */
