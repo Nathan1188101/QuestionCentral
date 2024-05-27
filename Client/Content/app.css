@@ -207,7 +207,7 @@ body.dark-mode{
 }
 
 .heart:hover{
-    color: rgb(255, 255, 255); 
+    color: #244ee5e3; 
     animation: beat 0.5s infinite alternate;
 }
 
@@ -221,6 +221,32 @@ body.dark-mode{
 .wyr-scale:hover{
     color: #10cd5f; 
     animation: flip .7s infinite alternate;
+}
+
+.brain{
+    transform: scale(8);
+    transition: color 0.5s ease;
+    color: #43b324;
+    margin: 130px;
+
+}
+
+.brain:hover{
+    color: #1a9db7; 
+    animation: beat 0.5s infinite alternate;
+}
+
+.question-mark{
+    transform: scale(8);
+    transition: color 0.5s ease;
+    color: #bf1632e3;
+    margin: 130px;
+
+}
+
+.question-mark:hover{
+    color: #aa1ab7; 
+    animation: flip 0.5s infinite alternate;
 }
 
 @keyframes beat {
