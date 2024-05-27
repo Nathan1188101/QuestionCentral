@@ -220,6 +220,29 @@ body.dark-mode{
     }
 }
 
+@media (min-width: 768px){
+    .options{
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .options div:first-child{
+        margin-left: 27%;
+        margin-right: 0%; 
+    }
+    .options div:nth-child(2){
+        margin-right: 27%;
+        margin-left: 0%; 
+    }
+    .options div:nth-child(3){
+        margin-left: 27%;
+        margin-right: 0%;
+    }
+    .options div:last-child{
+        margin-right: 27%;
+        margin-left: 0%;
+    }
+}
+
 /********************/
 /**** Footer Page ***/
 /********************/
