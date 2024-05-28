@@ -1,9 +1,9 @@
-* { 
+/* * { 
     margin : 0;
     padding: 0;
     box-sizing : border-box;
 
-  }
+  } */
 
 body{
     background-color: #f8f9fa;
@@ -103,7 +103,7 @@ body.dark-mode{
 .navbar-icon{
     height: auto; 
     width: 50px;
-    border-radius: 50px;
+    border-radius: 100px;
 }
 
 .navbar-brand{
@@ -114,6 +114,12 @@ body.dark-mode{
 
 .navbar{
     background-color: #673AB7;
+}
+
+@media (max-width: 768px){
+    .navbar-brand{
+        
+    }
 }
 
 /********************/
