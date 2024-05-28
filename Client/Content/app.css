@@ -110,13 +110,14 @@ body.dark-mode{
     font-family: 'Danfo', sans-serif;
     font-size: 2em;
     letter-spacing: 2px;
+    transition: font-size 0.5s ease;
 }
 
 .navbar{
     background-color: #673AB7;
 }
 
-@media (max-width: 768px){
+@media (max-width: 660px){
     .navbar-brand{
        font-size: 1.0em;
     }
@@ -175,8 +176,9 @@ body.dark-mode{
 }
 
 .categories-container{
+    display: flex;
     align-items: center;
-    justify-content: center;
+
     margin-top: 50px;
     
 }
