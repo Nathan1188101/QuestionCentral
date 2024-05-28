@@ -434,18 +434,36 @@ body.dark-mode{
 }
 
 .play-button{
-    font-size: 2rem;
+    padding: 10px 20px; 
+    padding-right: 100px;
+    border-radius: 5px;
+    border: none; 
+    background-color: rgb(89, 249, 77);
+    transition: background-color 0.5s ease;
+    /* font-size: 2rem;
     padding: 10px 20px;
     background-color: #f8f9fa;
     border: 1px solid #000;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease; */
 
 }
 
+.play-button:hover{
+    background-color: rgb(80, 218, 71);
+}
+
+.play-button:active{
+    background-color: rgb(69, 194, 60);
+}
+
+.play-button:checked{
+    background-color: rgb(69, 194, 60);
+}
+
 /* small devices */
-@media (max-width: 776px){
+/* @media (max-width: 776px){
     .couples-categories{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -464,6 +482,46 @@ body.dark-mode{
         height: 150px;
     }
 
+}
+
+@media (max-width: 1400px){
+    .couples-categories{
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
+
+/* Default layout for large screens */
+.couples-categories {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Layout for medium screens */
+@media (max-width: 1245px) {
+    .couples-categories {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Layout for small screens */
+@media (max-width: 900px) {
+    .couples-categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .couples-categories > .couples-item > label {
+        width: 250px;
+        height: 150px;
+    }
+}
+
+/* Layout for smallest screens */
+@media (max-width: 660px) {
+    .couples-categories {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .couples-categories > .couples-item > label {
+        width: 250px;
+        height: 150px;
+    }
 }
 
 /********************/
