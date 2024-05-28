@@ -40,7 +40,20 @@
     <div class="play-button-container">
         <button class="play-button" type="submit" id="couples-game-submit"><i class="fa-solid fa-play"></i></button>
     </div>
-    <div class="couples-question-container">
-        <p class="couples-question">{{question}}</p>
+    <div class="container">
+        <div class="question-container">
+            <div class="card">
+                <div class="content">
+                    {{!-- image or something here --}}
+                    {{!-- <img href = "#" src="/Content/questionMarkLogo.webp"> --}}
+                    <p><i class="question-mark fa-solid fa-question"></i></p>
+                </div>
+                <div class="couples-question-container">
+                    <h3>{{category}}</h3>
+                    <p class="couples-question">{{question}}</p>
+                </div>
+            </div>  
+        </div>
     </div>
+    
 </body>

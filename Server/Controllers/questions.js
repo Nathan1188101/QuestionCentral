@@ -57,7 +57,7 @@ let couplesQuestion = async (req, res, next) => {
         let questionReturned = JSON.parse(data) //parse the data returned from the api
         let question = questionReturned.text //get the question from the data (under text in the response)
 
-        res.render('questions/couples', { title: 'Couples Questions', page: 'couples', question: question }) //render the couples questions page with the question
+        res.render('questions/couples', { title: 'Couples Questions', page: 'couples', question: question, category: category }) //render the couples questions page with the question
     }
     catch(err){
         console.log(err)

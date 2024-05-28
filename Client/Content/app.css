@@ -1,3 +1,10 @@
+* { 
+    margin : 0;
+    padding: 0;
+    box-sizing : border-box;
+
+  }
+
 body{
     background-color: #f8f9fa;
     color: black;
@@ -427,11 +434,92 @@ body.dark-mode{
     background-size: cover;
 }
 
-.couples-question-container{
+
+/* 
+
+cool hover card reveal thing
+Source: https://codepen.io/keubibo/pen/yLXYVOK
+
+been modified to my fit my needs, but the original idea is from the above source
+
+*/
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.question-container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* may not need this*/
+    padding: 30px; 
+}
+
+.question-container .card {
+    position: relative;
+    max-width: 300px; 
+    height: 225px; /* was originally 215px */
+    background-color: #fff;
+    margin: 30px 10px; 
+    padding: 20px 15px;
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out; 
+    border-radius: 15px; 
+}
+
+.question-container .card:hover{
+    height: 450px;
+}
+
+.question-container .card .content{
+    position: relative; 
+    width: 260px;
+    height: 260px;
+
+    top: -40%;
+    left: 8px; 
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); 
+    z-index: 1; 
+    background-color: #fff;
+}
+
+.question-container .card .content img{
+    max-width: 100%;
+    border-radius: 15px; 
+}
+
+.question-container .card .content p{
+    max-width: 100%;
+    height: 120%; /* was 70 originally */
+    border-radius: 15px; 
+}
+
+.question-container .card .couples-question-container{
+    position: relative;
+    top: -140px;
+    padding: 10px 15px;
+    color: #111; 
+    text-align: center; 
+    
+    visibility: hidden;
+    opacity: 0; 
+    transition: 0.1s ease-in-out;
+}
+
+.question-container .card:hover .couples-question-container{
+    margin-top: 30px;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
 
 .play-button{
     padding: 10px 20px; 
@@ -463,11 +551,6 @@ body.dark-mode{
     background-color: rgb(69, 194, 60);
 }
 
-.couples-question-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 /* small devices */
 /* @media (max-width: 776px){
