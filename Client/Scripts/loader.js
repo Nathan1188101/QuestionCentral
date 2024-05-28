@@ -52,4 +52,4 @@ fetch(`/api/couplesQuestion?category=${encodeURIComponent(category)}`)
         // Hide the loader
         hideLoader();
     });
-    */
+*/

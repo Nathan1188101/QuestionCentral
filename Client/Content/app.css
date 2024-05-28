@@ -338,6 +338,73 @@ body.dark-mode{
 }
 
 /********************/
+/**** Couples Page **/
+/********************/
+
+.couples-form{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 20%; 
+    padding-right: 20%;
+}
+
+.couples-categories{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+    padding-left: 0px;
+    margin-left: 0; 
+}
+
+.couples-categories > .couples-item > input[type="radio"]{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none
+}
+
+.couples-categories > .couples-item > label{
+    padding: 10px 20px; 
+    width: 200px;
+    height: 100px;
+    background-color: #ddd; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.couples-categories > .couples-item > input[type="radio"]:checked + label{
+    background-color: #aaa; 
+}
+
+.spicy{
+    background-color: #f6183de3;
+
+}
+
+.couples-question-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* small devices */
+@media (max-width: 776px){
+    .couples-categories{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}   
+
+@media (max-width: 660px){
+    .couples-categories{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+/********************/
 /**** Footer Page ***/
 /********************/
 
