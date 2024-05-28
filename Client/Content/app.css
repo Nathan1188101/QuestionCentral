@@ -367,21 +367,64 @@ body.dark-mode{
 }
 
 .couples-categories > .couples-item > label{
-    padding: 10px 20px; 
-    width: 200px;
-    height: 100px;
+    padding: 15px 20px; 
+    width: 350px;
+    height: 170px;
     background-color: #ddd; 
     border-radius: 5px; 
     cursor: pointer; 
+    transition: opacity 0.5s ease;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .couples-categories > .couples-item > input[type="radio"]:checked + label{
-    background-color: #aaa; 
+    opacity: 0.6;
 }
 
-.spicy{
-    background-color: #f6183de3;
+.couples-categories > .couples-item > .spicy{
+    background: url(../Content/flame-emoji-background.jpeg); 
 
+}
+
+.couples-categories > .couples-item > .induce {
+    background: url(../Content/induce.jpg);
+    background-size: cover;
+    
+}
+
+.couples-categories > .couples-item > .comedy {
+    background: url(../Content/comedy.jpg);
+    background-size: cover;
+
+}
+
+.couples-categories > .couples-item > .future {
+    background: url(../Content/cyrstalBall.PNG);
+    background-size: cover;
+
+}
+
+.couples-categories > .couples-item > .adventure {
+    background: url(../Content/adventure.PNG);
+    background-size: cover;
+
+}
+
+.couples-categories > .couples-item > .communication {
+    background: url(../Content/communication.PNG);
+    background-size: cover;
+
+}
+
+.couples-categories > .couples-item > .fun {
+    background: url(../Content/fun.PNG);
+    background-size: cover;
+}
+
+.couples-categories > .couples-item > .intimacy {
+    background: url(../Content/intimate.PNG);
+    background-size: cover;
 }
 
 .couples-question-container{
@@ -390,16 +433,35 @@ body.dark-mode{
     align-items: center;
 }
 
+.play-button{
+    font-size: 2rem;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+
+}
+
 /* small devices */
 @media (max-width: 776px){
     .couples-categories{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .couples-categories > .couples-item > label{
+        width: 250px;
+        height: 150px;
     }
 }   
 
 @media (max-width: 660px){
     .couples-categories{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .couples-categories > .couples-item > label{
+        width: 250px;
+        height: 150px;
     }
 
 }
