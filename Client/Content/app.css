@@ -1,9 +1,9 @@
-/* * { 
+ /* * { 
     margin : 0;
     padding: 0;
     box-sizing : border-box;
 
-  } */
+  }  */
 
 body{
     background-color: #f8f9fa;
@@ -165,9 +165,17 @@ body.dark-mode{
 
 }
 
+/* not sure if brain is not working right now, but when I add margin to this it is adding it to all 4 of the options on the categories page.
+
+HOWEVER adding 
+
+*/
 .wyr-option{
     font-family: 'Danfo', sans-serif;
     font-size: 2rem;
+    margin-left: 10px;
+    margin-right: 10px;
+
 }
 
 .couples-option{
@@ -177,10 +185,7 @@ body.dark-mode{
 
 .categories-container{
     display: flex;
-    align-items: center;
-
-    margin-top: 50px;
-    
+    justify-content: center;
 }
 
 .options{
@@ -191,14 +196,15 @@ body.dark-mode{
     align-items: center;
 }
 
+/* Getting rid of the margin in here seems to fix the weird centering issue on main category selection page */
 .options div{
     text-align: center; 
     min-width: 300px;
     height: 400px; 
     border: 1px solid #000; 
     border-radius: 20px; 
-    margin-left: 20%;
-    margin-right: 20%;
+    /* margin-left: 20%; */
+    /* margin-right: 20%; */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.3s ease;
 }
@@ -332,24 +338,24 @@ body.dark-mode{
 
 @media (min-width: 768px){
     .options{
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);;
     }
 
     .options div:first-child{
-        margin-left: 27%;
-        margin-right: 0%; 
+        /* margin-left: 27%;
+        margin-right: 0%;  */
     }
     .options div:nth-child(2){
-        margin-right: 27%;
-        margin-left: 0%; 
+        /* margin-right: 27%;
+        margin-left: 0%;  */
     }
     .options div:nth-child(3){
-        margin-left: 27%;
-        margin-right: 0%;
+        /* margin-left: 27%;
+        margin-right: 0%; */
     }
     .options div:last-child{
-        margin-right: 27%;
-        margin-left: 0%;
+        /* margin-right: 27%;
+        margin-left: 0%; */
     }
 }
 
@@ -493,7 +499,7 @@ been modified to my fit my needs, but the original idea is from the above source
     height: 260px;
 
     top: -40%;
-    left: 8px; 
+    left: 5px; 
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); 
     z-index: 1; 
     background-color: #fff;
