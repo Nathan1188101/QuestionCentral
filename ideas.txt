@@ -11,3 +11,12 @@
     very well. 
 
 4. Make a tiktok page to promote this 
+
+5. On hover on couples game page categories, have a little description slide up about what kind of questions may be in that 
+    category 
+
+6. Possible to post my own api for people to use on RapidAPI.com?? 
+
+7. Home page, put instructions perhaps. Sample questions? step by step displayed on home page 
+
+8. More categories on main category page, Family and friends (then sub categories within), never have I ever, and more as you think of them
